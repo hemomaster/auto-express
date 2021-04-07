@@ -1,21 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="header__top">
+          <div class="container">
+            <div class="header__inner">
+              <a href="#" class="header__top-logo">
+                <img
+                  src="./images/logo.svg"
+                  alt="logo company"
+                  class="header__logo-img"
+                />
+              </a>
+              <a href="tel:+380505556677" class="header__top-phone"
+                >+38 (050) 555 66 77</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="header__content">
+          <div class="container header__content-container">
+            <h1 class="header__content-title">авто из сша “под ключ”</h1>
+            <h2 class="header__content-subtitle">
+              ЗАКАЖИ СЕБЕ АВТО ИЗ США С ВЫГОДОЙ ДО 40%
+            </h2>
+            <span class="header__content-slogan"
+              >Подбор, покупка, доставка, растаможка, ремонт, оформление по
+              договору</span
+            >
+            <a href="#" class="header__content-btn consultation"
+              >КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a
+            >
+            <ul class="header__content-social social-media">
+              <li class="social-media__item">
+                <a href="#" class="social-media__link">
+                  <svg class="icon icon-instagram social-media__icon">
+                    <use
+                      xlink:href="./images/symbol-defs.svg#icon-instagram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" class="social-media__link">
+                  <svg class="icon icon-telegram social-media__icon">
+                    <use
+                      xlink:href="./images/symbol-defs.svg#icon-telegram"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" class="social-media__link">
+                  <svg class="icon icon-whatsapp social-media__icon">
+                    <use
+                      xlink:href="./images/symbol-defs.svg#icon-whatsapp"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-media__item">
+                <a href="#" class="social-media__link">
+                  <svg class="icon icon-facebook social-media__icon">
+                    <use
+                      xlink:href="./images/symbol-defs.svg#icon-facebook"
+                    ></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+            <div class="header__content-picture">
+              <img
+                src="./images/avto.png"
+                alt="ford mustang"
+                class="header__content-img"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="services section">
+        <div class="container">
+          <h2 class="title services__title">наши услуги</h2>
+          <div class="services__inner">
+            <div class="services__content">
+              <div class="services__content-box">
+                <span class="services__content-title">
+                  Почему ввоз авто из США?
+                </span>
+                <div class="services__content-descr">
+                  <p class="services__content-text">
+                    Мы сравнили рынки США с Европейскими и поняли, что покупка
+                    автомобиля в Америке выгоднее в несколько раз, как бы
+                    парадоксально это не звучало. Это вызвано продуманной
+                    логистикой, уровнем развития сервисов по оцениванию
+                    состояния авто и самим процессом покупки автомобиля.
+                  </p>
+                  <p class="services__content-text">
+                    Большинство граждан США берут автомобиль в лизинг на
+                    несколько лет и все время эксплуатации сама лизинговая
+                    компания занимается постоянным ТО автомобиля, вследствие
+                    чего, машины из США – один из лучших выборов для
+                    автолюбителей Украины.
+                  </p>
+                </div>
+              </div>
+              <div class="services__content-box">
+                <span class="services__content-title">
+                  Из-за чего такая низкая цена?
+                </span>
+                <p class="services__content-text">
+                  Битые автомобили из США выкупаются с аукционов страховых
+                  компаний. На этих аукционах машина теряет половину цены даже
+                  из-за минимальных повреждений. Если учитывать денежные
+                  затраты, а именно выкуп, доставку, таможню и ремонт, то цена
+                  аналогичного по состоянию автомобиля в Украине будет выше на
+                  35-50%, а новые будут стоить космических денег.
+                </p>
+              </div>
+            </div>
+            <ol class="services__list">
+              <li class="services__item">
+                <span class="services__item-title">Покупка авто</span
+                ><span class="services__item-text"
+                  >Подбор автомобиля и экспертная проверка</span
+                >
+              </li>
+              <li class="services__item">
+                <span class="services__item-title">Доставка морем</span
+                ><span class="services__item-text"
+                  >Расчет оптимальной стоимости доставки авто</span
+                >
+              </li>
+              <li class="services__item">
+                <span class="services__item-title">Растаможка авто</span
+                ><span class="services__item-text"
+                  >Комплексный ремонт автомобиля на СТО</span
+                >
+              </li>
+              <li class="services__item">
+                <span class="services__item-title">Ремонт авто</span
+                ><span class="services__item-text"
+                  >Комплексный ремонт автомобиля на СТО</span
+                >
+              </li>
+              <li class="services__item">
+                <span class="services__item-title">Сертификация</span
+                ><span class="services__item-text"
+                  >Услуга предоставляется по желанию</span
+                >
+              </li>
+              <li class="services__item">
+                <span class="services__item-title">Постановка на учет</span
+                ><span class="services__item-text"
+                  >Оформление автомобиля в Украине</span
+                >
+              </li>
+            </ol>
+          </div>
+          <a href="#" class="services__content-btn consultation">
+            КОНСУЛЬТАЦИЯ ЭКСПЕРТА<span class="consultation__decor">жми</span>
+          </a>
+        </div>
+      </section>
+    </main>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
