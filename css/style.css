@@ -57,7 +57,6 @@ body {
 TITLE
 ******************************* */
 .title {
-  display: inline-block;
   position: relative;
   font-weight: normal;
   font-size: 36px;
@@ -70,11 +69,11 @@ TITLE
   content: "";
   position: absolute;
   top: 50%;
-  right: 0;
-  transform: translate(calc(100% + 8px), -50%);
+  transform: translateY(-50%);
   width: 80px;
   height: 3px;
   background-color: #21062a;
+  margin-left: 8px;
 }
 /* *******************************
 CONSULTATION
@@ -87,32 +86,36 @@ CONSULTATION
   text-transform: uppercase;
   color: #fff;
   background-color: #5a0d67;
+  border: 1px solid #5a0d67;
   transition: all 0.3s ease-in-out;
   white-space: nowrap;
 }
-.consultation__decor {
-  display: block;
-  padding-left: 90px;
+.consultation:hover.consultation--decor {
+  border-color: #5a0d67;
+}
+.consultation--decor::after {
+  content: "жми";
   position: absolute;
-  right: 0;
   top: 50%;
-  transform: translate(95%, -50%);
+  right: 0;
+  transform: translate(calc(100% + 80px), -50%);
   font-size: 14px;
   text-transform: uppercase;
   color: #c4c4c4;
 }
-.consultation__decor::before {
+.consultation--decor::before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 0;
-  transform: translateY(-50%);
+  right: 0;
+  transform: translate(70px, -50%);
   width: 80px;
   height: 2px;
   background-color: #c4c4c4;
 }
 .consultation:hover {
   color: #5a0d67;
+  border-color: #fff;
   background-color: #fff;
 }
 /* *******************************
@@ -142,8 +145,6 @@ HEADER
 .header__top-logo {
   width: 197px;
   height: 53px;
-}
-.header__logo-img {
 }
 .header__top-phone {
   font-weight: 400;
@@ -180,16 +181,12 @@ HEADER
   align-self: start;
   margin-bottom: 70px;
 }
-.header__content-social {
-}
 .social-media {
   display: flex;
   align-items: center;
 }
 .social-media__item:not(:last-child) {
   margin-right: 10px;
-}
-.social-media__link {
 }
 .social-media__icon {
   fill: #fff;
@@ -233,8 +230,6 @@ SERVICES
 .section {
   padding-top: 100px;
 }
-.services {
-}
 .services__inner {
   display: flex;
   margin-bottom: 50px;
@@ -255,22 +250,58 @@ SERVICES
   margin-bottom: 12px;
 }
 .services__content-descr {
+  display: block;
 }
 .services__content-text:not(:last-child) {
   margin-bottom: 12px;
 }
-.services__content-btn {
-}
-.consultation {
-}
-.consultation--decor {
-}
 .services__list {
   flex-basis: 50%;
+  list-style-type: none;
+  counter-reset: number;
 }
 .services__item {
+  position: relative;
+  max-width: 455px;
+  padding: 11px 47px 11px 110px;
+  border: 2px solid #c4c4c4;
+  transition: max-width 0.3s ease-in-out;
 }
+.services__item::before {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%) rotate(-90deg);
+  counter-increment: number;
+  content: "0" counter(number);
+  font-size: 36px;
+  font-weight: 400;
+  color: #c4c4c4;
+  transition: color 0.3s ease-in-out;
+}
+.services__item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.services__item:hover {
+  max-width: 500px;
+  border: 2px solid #5a0d67;
+}
+.services__item:hover::before,
+.services__item:hover .services__item-title {
+  color: #5a0d67;
+}
+.services__item:hover .services__item-text {
+  color: #000;
+}
+
 .services__item-title {
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1;
+  transition: color 0.3s ease-in-out;
 }
 .services__item-text {
+  line-height: 1;
+  transition: color 0.3s ease-in-out;
 }
