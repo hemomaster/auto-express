@@ -143,6 +143,9 @@ HEADER
   height: 100%;
 }
 .header__top-logo {
+  flex-shrink: 0;
+}
+.logo {
   width: 197px;
   height: 53px;
 }
@@ -293,7 +296,6 @@ SERVICES
 .services__item:hover .services__item-text {
   color: #000;
 }
-
 .services__item-title {
   display: block;
   font-size: 24px;
@@ -304,4 +306,167 @@ SERVICES
 .services__item-text {
   line-height: 1;
   transition: color 0.3s ease-in-out;
+}
+/* *******************************
+BENEFITS
+******************************* */
+.benefits__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.benefits__images {
+  flex-basis: 26.67%;
+  margin-right: 20px;
+}
+.benefits__content {
+  flex-basis: 65.42%;
+}
+.benefits__title {
+  padding-left: 185px;
+}
+ul.benefits__list {
+  background-color: #21062a;
+  color: #fff;
+  padding: 25px 0 25px 185px;
+}
+.benefits__item {
+  max-width: 320px;
+  margin-bottom: 20px;
+}
+.benefits__item-num {
+  display: block;
+  font-weight: 400;
+  font-size: 36px;
+}
+.benefits__item-title {
+  display: block;
+  font-weight: 300;
+  font-size: 24px;
+}
+.benefits__item-descr {
+  color: #c4c4c4;
+}
+/* *******************************
+CAROUSEL
+******************************* */
+.carousel-box {
+  margin-bottom: 20px;
+  height: 350px;
+}
+.carousel-box__slider,
+.carousel-box__card {
+  width: 390px;
+  height: 350px;
+}
+.carousel-box__card {
+  box-sizing: border-box;
+  padding: 7px 3px 0 3px;
+  border: 1px solid #c4c4c4;
+  background-color: #fff;
+}
+.carousel-box__card-img {
+  display: block;
+  width: 380px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 13px;
+}
+.carousel-box__card-name,
+.carousel-box__card-discount {
+  display: block;
+  text-align: center;
+}
+.carousel-box__card-name {
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.carousel-pagination {
+  text-align: center;
+}
+.carousel-pagination .swiper-pagination-bullet {
+  width: 50px;
+  height: 3px;
+  border-radius: 0;
+  margin: 0 10px;
+}
+/* *******************************
+CAROUSEL
+******************************* */
+.info__container {
+  display: flex;
+}
+.info__contact,
+.info__request {
+  flex-basis: 50%;
+  padding: 50px 0 30px;
+}
+.info__contact-item {
+  margin-bottom: 20px;
+}
+.info__contact-strong {
+  display: block;
+  color: #5a0d67;
+}
+.info__request {
+  color: #fff;
+  background-color: #21062a;
+}
+.info__request .info__contact-title {
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  margin-left: -80px;
+  margin-bottom: 16px;
+}
+.info__request .info__contact-title::after {
+  background-color: #fff;
+}
+.form {
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+}
+.form__input {
+  display: block;
+  width: 100%;
+  font: 300 18px/1.5 "Oswald", sans-serif;
+  color: #c4c4c4;
+  text-align: center;
+  padding: 24px;
+  border: 1px solid #ffffff;
+  background-color: transparent;
+  margin-bottom: 12px;
+}
+.form__input::placeholder {
+  color: currentColor;
+}
+.form__input:last-of-type {
+  margin-bottom: 70px;
+}
+/* *******************************
+FOOTER
+******************************* */
+.footer {
+  padding: 24px 0;
+  background-color: #21062a;
+}
+.footer__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer__logo {
+  flex-shrink: 0;
+}
+.footer__social {
+  flex-shrink: 0;
+  margin: 0 auto;
+}
+.footer .social-media {
+  padding: 0 10px;
+}
+.footer__police {
+  white-space: nowrap;
+  color: #fff;
 }
