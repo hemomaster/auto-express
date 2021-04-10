@@ -3,109 +3,113 @@
   Верстка сайта с нуля, для новичков. Марафон по верстке, день 1
   https://youtu.be/xVxAR2fMQoU
 
-  https://youtu.be/xVxAR2fMQoU?t=9626
+  https://youtu.be/XAf8V9wqF2U?t=6124
 -->
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./images/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./images/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./images/favicon/site.webmanifest" />
+    <title>AUTO Express | АВТО ИЗ США “ПОД КЛЮЧ”</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
-    <!-- <link rel="stylesheet" href="css/slick.css" /> -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
-    <!-- <link rel="stylesheet" href="css/jquery.fancybox.css" /> -->
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header class="header">
-      <div class="header__wrapper">
+      <div class="container header__container">
         <div class="header__top">
-          <div class="container">
-            <div class="header__inner">
-              <a href="#" class="header__top-logo logo">
-                <img
-                  src="./images/logo.svg"
-                  alt="logo company"
-                  class="logo__img"
-                />
-              </a>
-              <a href="tel:+380505556677" class="header__top-phone"
-                >+38 (050) 555 66 77</a
-              >
-            </div>
-          </div>
+          <a href="#" class="header__top-logo logo">
+            <img src="./images/logo.svg" alt="logo company" class="logo__img"
+          /></a>
+          <a href="tel:+380505556677" class="header__top-phone"
+            >+38 (050) 555 66 77</a
+          >
         </div>
         <div class="header__content">
-          <div class="container header__content-container">
-            <h1 class="header__content-title">авто из сша “под ключ”</h1>
-            <h2 class="header__content-subtitle">
-              ЗАКАЖИ СЕБЕ АВТО ИЗ США С ВЫГОДОЙ ДО 40%
-            </h2>
-            <span class="header__content-slogan"
-              >Подбор, покупка, доставка, растаможка, ремонт, оформление по
-              договору</span
-            >
-            <a href="#" class="header__content-btn consultation"
-              >КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a
-            >
-            <ul class="header__content-social social-media">
-              <li class="social-media__item">
-                <a href="#" class="social-media__link">
-                  <svg class="icon icon-instagram social-media__icon">
-                    <use
-                      xlink:href="./images/symbol-defs.svg#icon-instagram"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-media__item">
-                <a href="#" class="social-media__link">
-                  <svg class="icon icon-telegram social-media__icon">
-                    <use
-                      xlink:href="./images/symbol-defs.svg#icon-telegram"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-media__item">
-                <a href="#" class="social-media__link">
-                  <svg class="icon icon-whatsapp social-media__icon">
-                    <use
-                      xlink:href="./images/symbol-defs.svg#icon-whatsapp"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="social-media__item">
-                <a href="#" class="social-media__link">
-                  <svg class="icon icon-facebook social-media__icon">
-                    <use
-                      xlink:href="./images/symbol-defs.svg#icon-facebook"
-                    ></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-            <div class="header__content-picture">
-              <img
-                src="./images/avto.png"
-                alt="ford mustang"
-                class="header__content-img"
-              />
-            </div>
-          </div>
+          <h1 class="header__content-title">
+            авто из сша <span>“под ключ”</span>
+          </h1>
+          <h2 class="header__content-subtitle">
+            ЗАКАЖИ СЕБЕ АВТО ИЗ США <span>С ВЫГОДОЙ ДО 40%</span>
+          </h2>
+          <span class="header__content-slogan"
+            >Подбор, покупка, доставка, растаможка, ремонт, оформление по
+            договору</span
+          >
+          <a href="#info" class="header__content-btn consultation scroll-link"
+            >КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a
+          >
+          <ul class="header__content-social social-media">
+            <li class="social-media__item">
+              <a href="#" class="social-media__link" target="_blank">
+                <svg class="icon icon-instagram social-media__icon">
+                  <use
+                    xlink:href="./images/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link" target="_blank">
+                <svg class="icon icon-telegram social-media__icon">
+                  <use
+                    xlink:href="./images/symbol-defs.svg#icon-telegram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link" target="_blank">
+                <svg class="icon icon-whatsapp social-media__icon">
+                  <use
+                    xlink:href="./images/symbol-defs.svg#icon-whatsapp"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a href="#" class="social-media__link" target="_blank">
+                <svg class="icon icon-facebook social-media__icon">
+                  <use
+                    xlink:href="./images/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <img
+            src="./images/avto.png"
+            alt="ford mustang"
+            class="header__content-img"
+          />
         </div>
       </div>
     </header>
+
     <main class="main">
       <section class="services section">
         <div class="container">
@@ -194,6 +198,7 @@
           </a>
         </div>
       </section>
+
       <section class="benefits section">
         <div class="container benefits__container">
           <img src="./images/car.png" alt="car" class="benefits__images" />
@@ -202,29 +207,35 @@
             <ul class="benefits__list">
               <li class="benefits__item">
                 <strong class="benefits__item-num">650</strong>
-                <span class="benefits__item-title"
-                  >успешно доставленных авто</span
-                >
-                <p class="benefits__item-descr">
-                  большой опыт пригона автомобилей из США под ключ, все клиенты
-                  остались довольны на 100%
-                </p>
+                <div class="benefits__item-droup">
+                  <span class="benefits__item-title"
+                    >успешно доставленных авто</span
+                  >
+                  <p class="benefits__item-descr">
+                    большой опыт пригона автомобилей из США под ключ, все
+                    клиенты остались довольны на 100%
+                  </p>
+                </div>
               </li>
               <li class="benefits__item">
                 <strong class="benefits__item-num">5</strong>
-                <span class="benefits__item-title">лет на рынке Украины</span>
-                <p class="benefits__item-descr">
-                  Работаем по всей территории Украины, работаем по договору с
-                  клиентами
-                </p>
+                <div class="benefits__item-droup">
+                  <span class="benefits__item-title">лет на рынке Украины</span>
+                  <p class="benefits__item-descr">
+                    Работаем по всей территории Украины, работаем по договору с
+                    клиентами
+                  </p>
+                </div>
               </li>
               <li class="benefits__item">
                 <strong class="benefits__item-num">100 %</strong>
-                <span class="benefits__item-title">доверия клиентов</span>
-                <p class="benefits__item-descr">
-                  Онлайн отчетность. Вы всегда в курсе статуса подбора вашего
-                  авто. Фото и видео отчет
-                </p>
+                <div class="benefits__item-droup">
+                  <span class="benefits__item-title">доверия клиентов</span>
+                  <p class="benefits__item-descr">
+                    Онлайн отчетность. Вы всегда в курсе статуса подбора вашего
+                    авто. Фото и видео отчет
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
@@ -324,7 +335,7 @@
           <div class="carousel-pagination"></div>
         </div>
       </section>
-      <section class="info section">
+      <!-- <section class="info section">
         <div class="container info__container">
           <div class="info__contact">
             <h2 class="title info__contact-title">КОНТАКТЫ</h2>
@@ -366,9 +377,9 @@
             </form>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container footer__container">
         <a href="#" class="footer__logo logo">
           <img
@@ -410,10 +421,8 @@
         <a href="#" class="footer__police">Политика конфиденциальности</a>
       </div>
     </footer>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-    <!-- <script src="js/slick.min.js"></script> -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- <script src="js/jquery.fancybox.min.js"></script> -->
+     -->
+    <script src="./js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
