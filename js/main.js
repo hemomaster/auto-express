@@ -19,12 +19,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // CAROUSEL
   var swiper = new Swiper(".carousel-box", {
-    slidesPerView: 3,
-    spaceBetween: 10,
+    slidesPerView: 1,
     loop: true,
     pagination: {
       el: ".carousel-pagination",
       clickable: true,
+    },
+    breakpoints: {
+      600: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      1200: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
     },
   });
 });

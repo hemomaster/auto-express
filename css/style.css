@@ -168,11 +168,21 @@ SECTION
 HEADER
 ******************************* */
 .header {
-  background: var(--silver-color) url("../images/header-bg.jpg") center / cover
-    no-repeat;
+  background: var(--silver-color) url("../images/header-bg-576w.jpg") center /
+    cover no-repeat;
   min-height: 700px;
   height: 1px;
   color: var(--white-color);
+}
+@media screen and (min-width: 576px) {
+  .header {
+    background-image: url("../images/header-bg-1024w.jpg");
+  }
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    background-image: url("../images/header-bg.jpg");
+  }
 }
 .header__container {
   display: flex;
@@ -367,15 +377,15 @@ CAROUSEL
 }
 .carousel-box__slider,
 .carousel-box__card {
-  width: 390px;
-  height: 350px;
+  width: 100%;
+  height: 100%;
 }
 .carousel-box__card {
-  box-sizing: border-box;
   padding: 7px 3px 0 3px;
   border: 1px solid var(--silver-color);
   background-color: var(--white-color);
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out 0.1s;
+  box-sizing: border-box;
 }
 .carousel-box__card:hover {
   background-color: var(--accent-color);
@@ -384,10 +394,10 @@ CAROUSEL
 }
 .carousel-box__card-img {
   display: block;
-  width: 380px;
-  height: 250px;
+  width: 97%;
+  height: 74.5%;
   object-fit: cover;
-  margin-bottom: 13px;
+  margin: 0 auto 15px auto;
 }
 .carousel-box__card-name,
 .carousel-box__card-discount {
@@ -429,19 +439,21 @@ CONTACTS
 .info__request {
   color: var(--white-color);
   background-color: var(--company-color);
+  padding-left: 10px;
+  padding-right: 10px;
 }
-.info__request .info__contact-title {
+.info__request-title {
   margin-bottom: 20px;
   color: var(--white-color);
   text-align: center;
   margin-left: -80px;
   margin-bottom: 16px;
 }
-.info__request .info__contact-title::after {
+.info__request-title::after {
   background-color: var(--white-color);
 }
 .form {
-  width: 450px;
+  max-width: 450px;
   margin: 0 auto;
   text-align: center;
 }
@@ -477,8 +489,6 @@ FOOTER
 .footer__social {
   flex-shrink: 0;
   margin: 0 auto;
-}
-.footer .social-media {
   padding: 0 10px;
 }
 .footer__police {
@@ -494,6 +504,9 @@ MEDIA
   }
   .services__item:hover {
     max-width: 450px;
+  }
+  .carousel-box {
+    height: 450px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -552,6 +565,9 @@ MEDIA
   .benefits__item-droup {
     flex: 1;
   }
+  .carousel-box {
+    height: 400px;
+  }
 }
 @media screen and (max-width: 900px) {
   :root {
@@ -576,11 +592,62 @@ MEDIA
   .services.section {
     padding-top: 160px;
   }
+  .carousel-box {
+    height: 380px;
+  }
+  .info__contact {
+    padding: 20px 0 10px;
+  }
+  .info__request {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .info__contact-title::after,
+  .info__request-title::after {
+    width: 75px;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .services.section {
     padding-top: 130px;
+  }
+  .carousel-box {
+    height: 330px;
+  }
+  .info__container {
+    flex-direction: column;
+  }
+  .info__request {
+    order: -1;
+    padding-bottom: 30px;
+  }
+  .info__request-title {
+    text-align: left;
+    margin-bottom: 16px;
+    margin-left: 0;
+  }
+  .form {
+    max-width: 100%;
+  }
+  .form__input:last-of-type {
+    margin-bottom: 30px;
+  }
+  .info__contact-title {
+    margin-bottom: 16px;
+  }
+  .info__contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    justify-content: start;
+  }
+  .info__contact-item {
+    flex-basis: 33.33%;
+    margin-bottom: 0;
+  }
+  .info__contact-item:not(:last-child) {
+    padding-right: 15px;
   }
 }
 @media screen and (max-width: 600px) {
@@ -621,6 +688,31 @@ MEDIA
   }
   .services__item {
     padding-left: 70px;
+  }
+  .carousel-box {
+    height: 400px;
+  }
+  .carousel-pagination .swiper-pagination-bullet {
+    width: 30px;
+    margin: 0 8px;
+  }
+  .info__contact-item {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+  }
+  /* .info__contact-item:not(:last-child) {
+    padding-right: 15px;
+  } */
+  .footer__container {
+    flex-wrap: wrap;
+  }
+  .footer__social {
+    margin-right: 0;
+  }
+  .footer__police {
+    flex: 0 100%;
+    margin-top: 20px;
+    text-align: center;
   }
 }
 
@@ -686,5 +778,25 @@ MEDIA
   }
   .benefits__item-droup {
     text-align: center;
+  }
+  .carousel__title {
+    font-size: 24px;
+  }
+  .carousel-box {
+    height: 350px;
+  }
+  .info__request-title::after {
+    width: 40px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .carousel-box {
+    height: 280px;
+  }
+  .footer__social {
+    flex: 0 100%;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 0;
   }
 }

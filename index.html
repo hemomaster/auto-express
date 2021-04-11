@@ -101,11 +101,23 @@
               </a>
             </li>
           </ul>
-          <img
-            src="./images/avto.png"
-            alt="ford mustang"
-            class="header__content-img"
-          />
+          <picture>
+            <source
+              srcset="./images/avto.png"
+              media="(min-width: 600px)"
+              type="image/png"
+            />
+            <source
+              srcset="./images/avto-570w.png"
+              media="(min-width: 414px)"
+              type="image/png"
+            />
+            <img
+              src="./images/avto-390w.png"
+              alt="ford mustang"
+              class="header__content-img"
+            />
+          </picture>
         </div>
       </div>
     </header>
@@ -191,8 +203,8 @@
             </ol>
           </div>
           <a
-            href="#"
-            class="services__content-btn consultation consultation--decor"
+            href="#info"
+            class="services__content-btn consultation consultation--decor scroll-link"
           >
             КОНСУЛЬТАЦИЯ ЭКСПЕРТА
           </a>
@@ -241,9 +253,10 @@
           </div>
         </div>
       </section>
+
       <section class="carousel section">
         <div class="container">
-          <h2 class="title">пригнанные нами авто</h2>
+          <h2 class="title carousel__title">пригнанные нами авто</h2>
           <div class="swiper-container carousel-box">
             <div class="swiper-wrapper">
               <div class="swiper-slide carousel-box__slider">
@@ -335,7 +348,8 @@
           <div class="carousel-pagination"></div>
         </div>
       </section>
-      <!-- <section class="info section">
+
+      <section class="info section" id="info">
         <div class="container info__container">
           <div class="info__contact">
             <h2 class="title info__contact-title">КОНТАКТЫ</h2>
@@ -357,7 +371,7 @@
             </ul>
           </div>
           <div class="info__request">
-            <h2 class="title info__contact-title">Оставить заявку</h2>
+            <h2 class="title info__request-title">Оставить заявку</h2>
             <form class="info__request-form form" action="." method="get">
               <input
                 class="form__input"
@@ -371,15 +385,15 @@
                 name="user_phone"
                 placeholder="Ваш номер телефона"
               />
-              <button class="form__send consultation" type="reset">
+              <button class="form__send consultation" type="submit">
                 Отправить заявку
               </button>
             </form>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
         <a href="#" class="footer__logo logo">
           <img
@@ -421,7 +435,7 @@
         <a href="#" class="footer__police">Политика конфиденциальности</a>
       </div>
     </footer>
-     -->
+
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
