@@ -16,50 +16,12 @@
   font-weight: 400;
   font-style: normal;
 }
-:root {
-  --white-color: #fff;
-  --company-color: #21062a;
-  --accent-color: #5a0d67;
-  --silver-color: #c4c4c4;
-  --black-color: #2c2b2b;
-
-  --h0-fsize: 72px;
-  --h0-fweight: 400;
-  --h1-fsize: 36px;
-  --h1-fweight: 400;
-  --h2-fsize: 24px;
-  --h2-fweight: 300;
-  --btn-fsize: 14px;
-  --btn-fweight: 300;
-  --text-fsize: 18px;
-  --text-fweight: 300;
-}
-html {
-  box-sizing: border-box;
-}
-*,
-::before,
-::after {
-  box-sizing: inherit;
-}
-h1,
-h2,
 h3,
 h4,
 h5,
 h6,
-p,
-ul {
+p {
   margin: 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-a {
-  display: inline-block;
-  text-decoration: none;
-  color: currentColor;
 }
 button {
   padding: 0;
@@ -67,65 +29,6 @@ button {
   background-color: transparent;
   color: currentColor;
   cursor: pointer;
-}
-img {
-  max-width: 100%;
-}
-.icon {
-  display: block;
-  width: 1em;
-  height: 1em;
-  stroke-width: 0;
-  stroke: currentColor;
-  fill: currentColor;
-}
-.container {
-  max-width: 1230px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-body {
-  font: var(--text-fweight) var(--text-fsize) / 1.5 "Oswald", sans-serif;
-  color: var(--black-color);
-  background-color: var(--white-color);
-}
-/* *******************************
-TITLE
-******************************* */
-.title {
-  position: relative;
-  font-weight: var(--h1-fweight);
-  font-size: var(--h1-fsize);
-  line-height: 1.47;
-  text-transform: uppercase;
-  color: var(--company-color);
-  margin-bottom: 50px;
-}
-.title::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 80px;
-  height: 3px;
-  background-color: #21062a;
-  margin-left: 8px;
-}
-/* *******************************
-CONSULTATION
-******************************* */
-.consultation {
-  position: relative;
-  display: inline-block;
-  padding: 14px 54px;
-  font-weight: var(--btn-fweight);
-  font-size: var(--btn-fsize);
-  text-transform: uppercase;
-  color: var(--white-color);
-  background-color: var(--accent-color);
-  border: 1px solid var(--accent-color);
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out 0.1s;
-  white-space: nowrap;
 }
 .consultation:hover {
   color: var(--accent-color);
@@ -155,173 +58,10 @@ CONSULTATION
   height: 2px;
   background-color: var(--silver-color);
 }
-/* *******************************
-LOGO
-******************************* */
-.logo {
-  flex: 0 0 197px;
-  width: 197px;
-  height: 53px;
-}
-/* *******************************
-SOCIAL-MEDIA
-******************************* */
-.social-media {
-  display: flex;
-  align-items: center;
-}
-.social-media__item:not(:last-child) {
-  margin-right: 12px;
-}
-.social-media__icon {
-  fill: #fff;
-}
-/* *******************************
-SECTION
-******************************* */
-.section {
-  padding-top: 100px;
-}
-/* *******************************
-HEADER
-******************************* */
-.header {
-  background: var(--silver-color) url("../images/header-bg-576w.jpg") center /
-    cover no-repeat;
-  min-height: 700px;
-  height: 1px;
-  color: var(--white-color);
-}
-@media screen and (min-width: 576px) {
-  .header {
-    background-image: url("../images/header-bg-1024w.jpg");
-  }
-}
-@media screen and (min-width: 1024px) {
-  .header {
-    background-image: url("../images/header-bg.jpg");
-  }
-}
-.header__container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
-.header__top {
-  flex: 0 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 47px 0 45px;
-}
-.header__top-phone {
-  font-size: var(--h1-fsize);
-  font-weight: var(--h1-fweight);
-  padding-left: 20px;
-}
-.header__content {
-  flex: 1;
-  position: relative;
-  padding-top: 60px;
-}
-.header__content-title {
-  font-weight: var(--h0-fweight);
-  font-size: var(--h0-fsize);
-  text-transform: uppercase;
-}
-.header__content-subtitle {
-  font-size: var(--h1-fsize);
-  font-weight: var(--h1-fweight);
-  margin-bottom: 30px;
-}
-.header__content-slogan {
-  display: block;
-  margin-bottom: 30px;
-}
-.header__content-btn {
-  margin-bottom: 70px;
-}
-.header__content-social {
-  padding-left: 60px;
-}
-.header__content-img {
-  position: absolute;
-  right: 0;
-  bottom: -200px;
-}
-.icon-facebook {
-  width: 14px;
-  height: 25px;
-}
-.icon-instagram {
-  width: 25px;
-  height: 25px;
-}
-.icon-telegram {
-  width: 25px;
-  height: 19px;
-}
-.icon-whatsapp {
-  width: 25px;
-  height: 25px;
-}
-/* *******************************
-SERVICES
-******************************* */
-.services.section {
-  padding-top: 250px;
-}
-.services__inner {
-  display: flex;
-  margin-bottom: 50px;
-}
-.services__content {
-  flex-basis: 50%;
-}
-.services__content-box {
-  max-width: 500px;
-  width: 83.33%;
-}
-.services__content-box:not(:last-child) {
-  margin-bottom: 70px;
-}
-.services__content-title {
-  display: block;
-  color: var(--accent-color);
-  margin-bottom: 12px;
-}
 .services__content-descr {
   display: block;
 }
 .services__content-text:not(:last-child) {
-  margin-bottom: 12px;
-}
-.services__list {
-  flex-basis: 50%;
-  list-style-type: none;
-  counter-reset: number;
-}
-.services__item {
-  position: relative;
-  max-width: 450px;
-  width: 100%;
-  padding: 11px 19px 11px 110px;
-  border: 2px solid var(--silver-color);
-  transition: max-width 0.3s ease-in-out;
-}
-.services__item::before {
-  position: absolute;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%) rotate(-90deg);
-  counter-increment: number;
-  content: "0" counter(number);
-  font-size: var(--h1-fsize);
-  font-weight: var(--h1-fweight);
-  color: var(--silver-color);
-  transition: color 0.3s ease-in-out;
-}
-.services__item:not(:last-child) {
   margin-bottom: 12px;
 }
 .services__item:hover {
@@ -335,20 +75,10 @@ SERVICES
 .services__item:hover .services__item-text {
   color: var(--black-color);
 }
-.services__item-title {
-  display: block;
-  font-size: var(--h2-fsize);
-  font-weight: var(--h2-fweight);
-  line-height: 1;
-  transition: color 0.3s ease-in-out;
-}
 .services__item-text {
   line-height: 1;
   transition: color 0.3s ease-in-out;
 }
-/* *******************************
-BENEFITS
-******************************* */
 .benefits__container {
   display: flex;
   flex-wrap: wrap;
@@ -386,9 +116,6 @@ ul.benefits__list {
 .benefits__item-descr {
   color: var(--silver-color);
 }
-/* *******************************
-CAROUSEL
-******************************* */
 .carousel-box {
   margin-bottom: 20px;
   height: 350px;
@@ -436,9 +163,6 @@ CAROUSEL
   border-radius: 5px;
   margin: 0 10px;
 }
-/* *******************************
-CONTACTS
-******************************* */
 .info__container {
   display: flex;
 }
@@ -492,9 +216,6 @@ CONTACTS
 .form__input:last-of-type {
   margin-bottom: 70px;
 }
-/* *******************************
-FOOTER
-******************************* */
 .footer {
   padding: 24px 0;
   background-color: var(--company-color);
@@ -513,13 +234,7 @@ FOOTER
   white-space: nowrap;
   color: var(--white-color);
 }
-/* *******************************
-MEDIA
-******************************* */
 @media screen and (max-width: 1140px) {
-  .services__content-box {
-    width: 95%;
-  }
   .services__item:hover {
     max-width: 450px;
   }
@@ -528,32 +243,6 @@ MEDIA
   }
 }
 @media screen and (max-width: 1024px) {
-  .header__content-img {
-    width: 80%;
-    bottom: 0;
-    transform: translateY(44%);
-  }
-  .services.section {
-    padding-top: 200px;
-  }
-  .services__inner {
-    flex-direction: column;
-  }
-  .services__content,
-  .services__list {
-    flex-basis: auto;
-  }
-  .services__list {
-    order: -1;
-    margin-bottom: 40px;
-  }
-  .services__content-box {
-    max-width: 100%;
-  }
-  .services__content-box:not(:last-child) {
-    margin-bottom: 40px;
-  }
-  .services__item,
   .services__item:hover {
     max-width: 100%;
   }
@@ -588,28 +277,6 @@ MEDIA
   }
 }
 @media screen and (max-width: 900px) {
-  :root {
-    --h0-fsize: 54px;
-  }
-  .section {
-    padding-top: 60px;
-  }
-  .header__top-phone {
-    font-size: var(--h2-fsize);
-  }
-  .header__content-subtitle {
-    font-size: var(--h2-fsize);
-    margin-bottom: 20px;
-  }
-  .header__content-btn {
-    margin-bottom: 30px;
-  }
-  .header__content-social {
-    padding-left: 50px;
-  }
-  .services.section {
-    padding-top: 160px;
-  }
   .carousel-box {
     height: 380px;
   }
@@ -625,11 +292,7 @@ MEDIA
     width: 75px;
   }
 }
-
 @media screen and (max-width: 768px) {
-  .services.section {
-    padding-top: 130px;
-  }
   .carousel-box {
     height: 330px;
   }
@@ -669,44 +332,6 @@ MEDIA
   }
 }
 @media screen and (max-width: 600px) {
-  :root {
-    --h0-fsize: 36px;
-    --h1-fsize: 30px;
-    --h2-fsize: 20px;
-    --text-fsize: 16px;
-  }
-  .title {
-    margin-bottom: 25px;
-  }
-  .title::after {
-    width: 40px;
-  }
-  .header {
-    min-height: 620px;
-  }
-  .header__content {
-    text-align: center;
-    padding-top: 0;
-  }
-  .header__content-social {
-    padding-left: 0;
-    justify-content: center;
-  }
-  .header__content-img {
-    width: 100%;
-  }
-  .services.section {
-    padding-top: 120px;
-  }
-  .services__inner {
-    margin-bottom: 30px;
-  }
-  .services__content-box:not(:last-child) {
-    margin-bottom: 20px;
-  }
-  .services__item {
-    padding-left: 70px;
-  }
   .carousel-box {
     height: 400px;
   }
@@ -718,9 +343,6 @@ MEDIA
     flex-basis: 50%;
     margin-bottom: 20px;
   }
-  /* .info__contact-item:not(:last-child) {
-    padding-right: 15px;
-  } */
   .footer__container {
     flex-wrap: wrap;
   }
@@ -733,55 +355,10 @@ MEDIA
     text-align: center;
   }
 }
-
 @media screen and (max-width: 414px) {
-  :root {
-    --text-fsize: 14px;
-  }
-  .section {
-    padding-top: 50px;
-  }
   .consultation--decor::before,
   .consultation--decor::after {
     display: none;
-  }
-  .header {
-    min-height: 580px;
-  }
-  .header__top {
-    padding: 25px 0 25px;
-  }
-  .logo {
-    flex: 0 0 160px;
-    width: 160px;
-    height: 43px;
-  }
-  .header__top-phone {
-    font-size: var(--text-fsize);
-  }
-  .header__content-title span,
-  .header__content-subtitle span {
-    display: block;
-  }
-  .header__content-btn {
-    margin-bottom: 15px;
-  }
-  .services {
-    text-align: center;
-  }
-  .services__title,
-  .services__inner {
-    text-align-last: left;
-  }
-  .services.section {
-    padding-top: 85px;
-  }
-  .services__item {
-    padding-left: 40px;
-  }
-  .services__item::before {
-    font-size: var(--h2-fsize);
-    left: 10px;
   }
   ul.benefits__list {
     padding: 20px;
